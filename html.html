@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 1</title>
+</head>
+<body>
+<h1>Pictrue of The Day </h1>
+<p>
+    {{ parsed["date"] }}
+</p>
+<img title = " Picture of The Day " alt = "Picture of The Day " width = "400px" src  = "{{ parsed["url"] }}" >
+<p>
+    {{ parsed["explanation"] }}
+</p>
+
+<button onclick="myFunction()">For HD Resolution of The Picture</button>
+<script>
+    function myFunction() {
+    location.replace("{{ parsed["hdurl"] }}")
+}
+</script>
+
+</body>
+</html>
