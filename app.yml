@@ -6,10 +6,9 @@ env_variables:
   BUCKET_NAME: "example-gcs-bucket"
 
 handlers:
-- url: /static
-  static_dir: static
-- url: /.*
-  script: main.app
+# Matches requests to /images/... to files in static/images/...
+- url: /images
+  static_dir: static/images
 
 - url: /.*
   secure: always
