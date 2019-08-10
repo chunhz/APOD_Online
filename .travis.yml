@@ -1,7 +1,6 @@
-[mdyzma@devbox GitHub]$ tree .
-.
-|-- flask_and_travis_ci/
-    |-- .gitignore
-    |-- .travis.yml
-    |-- LICENSE
-    `-- README.md
+language: python
+
+python:
+    - 2.7
+    - 3.5
+    - 3.6
